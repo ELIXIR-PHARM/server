@@ -68,7 +68,7 @@ export class RendersService {
       .limit(limit)
       .getMany();
   }
-  
+
   async findOne(id: string, userId: string): Promise<Render | null> {
     return this.rendersRepository.findOneBy({ id, user_id: userId });
   }
