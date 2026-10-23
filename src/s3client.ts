@@ -21,7 +21,7 @@ export async function createS3Client() {
       region: config.s3.region,
       endpoint: config.s3.endpoint,
       credentials: {
-        accessKeyId: config.supabaseProjectId,
+        accessKeyId: config.supabaseStorageTenantId,
         secretAccessKey: config.supabaseAnonKey,
         sessionToken: session?.access_token,
       },
