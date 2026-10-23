@@ -125,7 +125,7 @@ export class FilesController {
       region: config.s3.region,
       endpoint: config.supabaseHost + '/storage/v1/s3',
       credentials: {
-        accessKeyId: config.supabaseProjectId,
+        accessKeyId: config.supabaseStorageTenantId,
         secretAccessKey: config.supabaseAnonKey,
         sessionToken: access_token,
       },
